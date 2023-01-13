@@ -1,0 +1,13 @@
+python code to generate all prime numbers
+def generate_primes(limit):
+    primes = []
+    for num in range(2, limit+1):
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            primes.append(num)
+    return primes
+
+limit = int(input("Enter the limit to generate prime numbers: "))
+print(generate_primes(limit))
