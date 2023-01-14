@@ -1,0 +1,17 @@
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+primes = [i for i in range(1, 101) if is_prime(i)]
+
+for i in range(1, 11):
+    for j in range(11 - i):
+        print(" ", end="")
+    for j in range(i):
+        if (i - j - 1) * (i - j) / 2 + j < len(primes):
+            print(primes[int((i - j - 1) * (i - j) / 2 + j)], end=" ")
+    print()
