@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+    <head> 
+        <style>
+            table,th,td {
+                border: 1px red;
+                border-collapse:collapse;
+            } 
+            th,td{
+                padding: 10px 
+            }
+            table#alter tr:nth-child(even){
+                background-color: #eee;}
+              table#alter tr:nth-child(odd){
+                background-color:#fff}              
+                 table#alter th {color:#6bda37;
+                background-color:grey;
+            }
+            </style>
+    </head>
+    <body>
+        <table id="alter">           
+            <tr>
+                <th> </th>
+                <th>ABC</th>
+                <th>BBC</th>
+                <th>CNN</th>
+            </tr>
+            <tr>
+                <th>6pm - 7pm</th>
+                <td rowspan="1">movie</td>
+                <td>comedy</td>
+                <td>news</td>
+            </tr>
+            <tr>
+                <th>7pm - 8pm</th>
+                <td>sports</td>
+                <td>current affairs </td>
+                </tr>
+               
+        </table>
+    </body>
+    </html>

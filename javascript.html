@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>how to calculate two text box values in javascript</title>
+    </head>
+    <body>
+        <h1>calculate Two Fields</h1>
+        <h1 id="answer"></h1>
+
+        num 1<input type="text" id="num1">
+        <br>
+        num 2<input type="text" id="num2">
+        <br>
+        <br>
+        <button onclick="calculate()">Calculate</button>
+<script>
+    function calculate ()
+    {
+        var field1=document.getElementById("num1").value;
+        var field2=document.getElementById("num2").value;
+        result=parseFloat(fileld1)+parseFloat(field2);
+        if (! isNaN(result))
+        {
+            document.getElementById("answer").innerHTML="The answer is"+result;
+        }
+    }
+</script>
+    </body>
+</html>
